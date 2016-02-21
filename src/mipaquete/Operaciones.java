@@ -21,6 +21,7 @@ public class Operaciones {
     public Operaciones() {
         this.a = 0;
         this.b = 0;
+        
     }
     
      /**

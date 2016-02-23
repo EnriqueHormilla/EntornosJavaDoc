@@ -1,18 +1,24 @@
 package mipaquete;
+
+import java.io.IOException;
+
 /**
-* Esta clase define objetos que contienen metodos de operaciones entre enteros
+* Esta {@code esto es code } clase define objetos que contienen metodos de operaciones entre enteros como suma {@link #calculaSuma(int, int) } {@linkplain  #calcularResta(int, int)  } 
 * @author  Enrique Hormilla
 * @deprecated No se aconseja su uso,la calse Math es mas completa.
 * @version 1.0
 * @see <a href="http://docs.oracle.com/javase/8/docs/api/index.html">Java API 8</a>
 * @since   2016-02-01
-* @
+* 
  */
 public class Operaciones {
     
     private int a,b;
-    
+   /**
+     * El valor de SMI = {@value #SMI }
+     */
     public static final double SMI = 5322.234;
+    
      /**
      * Constructor que inicializa la clase con los dos entero a 0.
      * @see #Operaciones() 
@@ -26,11 +32,14 @@ public class Operaciones {
     
      /**
      * Constructor que inicializa la clase con los dos entero.
+     * @exception IOException On input error.
+     * @see IOException
      * @param a Número Entero
      * @param b Número Entero
+     * 
      * @see #Operaciones(int, int) 
      */
-    public Operaciones(int a, int b) {
+    public Operaciones(int a, int b) throws IOException {
         this.a = a;
         this.b = b;
     }
